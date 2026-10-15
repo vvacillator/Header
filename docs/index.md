@@ -3,23 +3,19 @@
 layout: home
 
 hero:
-  name: "Header"
-  text: "Script snippets for Roblox Studio "
-  tagline: My great project tagline
+  name: Header
+  text: Scalable script headers for Roblox Studio
+  image:
+    alt: Header
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /guides/getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: View on GitHub
+      link: https://github.com/vvacillator/Header
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Simple
+    details: Extremely simple, learn in a minute!
 ---
-
