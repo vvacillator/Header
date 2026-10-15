@@ -1,6 +1,9 @@
 {
   "name": "Header",
   "tree": {
-    "$path": "src"
+    "$path": "src",
+    "packages": {
+      "$path": "roblox_packages"
+    }
   }
 }

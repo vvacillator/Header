@@ -1,92 +1,178 @@
 :root,
 .dark {
-  --vp-c-bg: #120A22;
-  --vp-c-bg-alt: #0E081B;
-  --vp-c-bg-elv: #1A1030;
-  --vp-c-bg-soft: #1E1338;
+  --hd-bg: #0E0C14;
+  --hd-bg-alt: #0B0A10;
+  --hd-surface: #15121D;
+  --hd-surface-2: #1B1726;
+  --hd-border: #241F31;
+  --hd-border-hover: #362E4A;
+  --hd-accent: #B79CFF;
+  --hd-accent-hover: #C8B3FF;
+  --hd-text: #EEEBF5;
+  --hd-text-muted: #8F88A3;
+  --hd-text-faint: #5F596F;
 
-  --vp-c-border: #2C1D4D;
-  --vp-c-divider: #22163D;
-  --vp-c-gutter: #0E081B;
+  --vp-c-bg: var(--hd-bg);
+  --vp-c-bg-alt: var(--hd-bg-alt);
+  --vp-c-bg-elv: var(--hd-surface);
+  --vp-c-bg-soft: var(--hd-surface);
 
-  --vp-c-text-1: #F3EEFF;
-  --vp-c-text-2: #9D8FC0;
-  --vp-c-text-3: #6E6390;
+  --vp-c-border: var(--hd-border);
+  --vp-c-divider: var(--hd-border);
+  --vp-c-gutter: var(--hd-bg-alt);
 
-  --vp-c-default-1: #C4B5FD;
-  --vp-c-default-2: #3A2766;
-  --vp-c-default-3: #2C1D4D;
-  --vp-c-default-soft: rgba(167, 139, 250, 0.08);
+  --vp-c-text-1: var(--hd-text);
+  --vp-c-text-2: var(--hd-text-muted);
+  --vp-c-text-3: var(--hd-text-faint);
 
-  --vp-c-brand-1: #A78BFA;
-  --vp-c-brand-2: #B9A2FB;
-  --vp-c-brand-3: #A78BFA;
-  --vp-c-brand-soft: rgba(167, 139, 250, 0.14);
+  --vp-c-default-1: var(--hd-text-muted);
+  --vp-c-default-2: var(--hd-border-hover);
+  --vp-c-default-3: var(--hd-border);
+  --vp-c-default-soft: rgba(183, 156, 255, 0.06);
+
+  --vp-c-brand-1: var(--hd-accent);
+  --vp-c-brand-2: var(--hd-accent-hover);
+  --vp-c-brand-3: var(--hd-accent);
+  --vp-c-brand-soft: rgba(183, 156, 255, 0.12);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
   --vp-c-tip-3: var(--vp-c-brand-3);
   --vp-c-tip-soft: var(--vp-c-brand-soft);
 
-  --vp-code-bg: #1A1030;
-  --vp-code-block-bg: #160D2B;
-  --vp-code-color: #E4D7FF;
-  --vp-code-line-highlight-color: rgba(167, 139, 250, 0.1);
+  --vp-code-bg: var(--hd-surface-2);
+  --vp-code-block-bg: var(--hd-surface);
+  --vp-code-color: #DCD3F5;
+  --vp-code-line-highlight-color: rgba(183, 156, 255, 0.08);
 
   --vp-button-brand-border: transparent;
-  --vp-button-brand-text: #120A22;
-  --vp-button-brand-bg: #A78BFA;
+  --vp-button-brand-text: var(--hd-bg);
+  --vp-button-brand-bg: var(--hd-accent);
   --vp-button-brand-hover-border: transparent;
-  --vp-button-brand-hover-text: #120A22;
-  --vp-button-brand-hover-bg: #B9A2FB;
+  --vp-button-brand-hover-text: var(--hd-bg);
+  --vp-button-brand-hover-bg: var(--hd-accent-hover);
   --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: #120A22;
-  --vp-button-brand-active-bg: #9474F0;
+  --vp-button-brand-active-text: var(--hd-bg);
+  --vp-button-brand-active-bg: #A586F5;
 
-  --vp-button-alt-border: #3A2766;
-  --vp-button-alt-text: #F3EEFF;
-  --vp-button-alt-bg: #1E1338;
-  --vp-button-alt-hover-border: #4C3580;
-  --vp-button-alt-hover-text: #F3EEFF;
-  --vp-button-alt-hover-bg: #24173F;
+  --vp-button-alt-border: var(--hd-border);
+  --vp-button-alt-text: var(--hd-text);
+  --vp-button-alt-bg: var(--hd-surface);
+  --vp-button-alt-hover-border: var(--hd-border-hover);
+  --vp-button-alt-hover-text: var(--hd-text);
+  --vp-button-alt-hover-bg: var(--hd-surface-2);
 
-  --vp-home-hero-name-color: #F3EEFF;
+  --vp-home-hero-name-color: var(--hd-text);
   --vp-home-hero-name-background: none;
   --vp-home-hero-image-background-image: none;
   --vp-home-hero-image-filter: none;
 
-  --vp-custom-block-tip-border: #3A2766;
-  --vp-custom-block-tip-text: var(--vp-c-text-1);
-  --vp-custom-block-tip-bg: rgba(167, 139, 250, 0.08);
-  --vp-custom-block-tip-code-bg: rgba(167, 139, 250, 0.14);
+  --vp-custom-block-tip-border: var(--hd-border);
+  --vp-custom-block-tip-text: var(--hd-text);
+  --vp-custom-block-tip-bg: rgba(183, 156, 255, 0.06);
+  --vp-custom-block-tip-code-bg: rgba(183, 156, 255, 0.12);
 
-  --vp-nav-bg-color: #120A22;
-  --vp-sidebar-bg-color: #0E081B;
-  --vp-local-search-bg: #120A22;
-  --vp-local-search-result-bg: #1A1030;
-  --vp-local-search-highlight-bg: #A78BFA;
-  --vp-local-search-highlight-text: #120A22;
+  --vp-nav-bg-color: var(--hd-bg);
+  --vp-sidebar-bg-color: var(--hd-bg-alt);
+  --vp-local-search-bg: var(--hd-bg);
+  --vp-local-search-result-bg: var(--hd-surface);
+  --vp-local-search-highlight-bg: var(--hd-accent);
+  --vp-local-search-highlight-text: var(--hd-bg);
+}
+
+.VPHero .name {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: var(--hd-text);
 }
 
 .VPHero .text {
-  color: var(--vp-c-text-2);
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: var(--hd-accent);
+  max-width: 560px;
+}
+
+.VPHero .tagline {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--hd-text-muted);
+  max-width: 460px;
+  padding-top: 16px;
+}
+
+@media (min-width: 960px) {
+  .VPHero .name {
+    font-size: 72px;
+  }
+
+  .VPHero .text {
+    font-size: 40px;
+  }
+}
+
+.VPHero {
+  padding-bottom: 72px !important;
 }
 
 .VPFeature {
-  border: 1px solid var(--vp-c-border);
-  background: #160D2B;
+  padding: 4px;
+  border: 1px solid var(--hd-border);
+  background: var(--hd-surface);
   border-radius: 16px;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, background 0.2s;
 }
 
 .VPFeature:hover {
-  border-color: #4C3580;
+  border-color: var(--hd-border-hover);
+  background: var(--hd-surface-2);
+}
+
+.VPFeature .title {
+  font-size: 16px;
+  color: var(--hd-text);
+}
+
+.VPFeature .details {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--hd-text-muted);
 }
 
 .VPButton {
   border-radius: 12px !important;
 }
 
+.VPHome .vp-doc {
+  max-width: 1152px;
+  margin: 72px auto 96px;
+  padding: 0 24px;
+}
+
+.VPHome .vp-doc h2 {
+  border-top: none;
+  margin-top: 0;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+div[class*="language-"] {
+  border: 1px solid var(--hd-border);
+  border-radius: 12px !important;
+}
+
+.vp-code-group .tabs {
+  background: var(--hd-surface);
+  border-radius: 12px 12px 0 0;
+  box-shadow: inset 0 -1px var(--hd-border);
+}
+
+.vp-code-group div[class*="language-"] {
+  border-radius: 0 0 12px 12px !important;
+}
+
 ::selection {
-  background: rgba(167, 139, 250, 0.3);
+  background: rgba(183, 156, 255, 0.28);
 }
